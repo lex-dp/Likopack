@@ -32,28 +32,24 @@ table {
   
   
   
-@mixin width-margin($width, $margin) {
-	width: $width;
+@mixin maxWidth($width, $margin) {
+	max-width: $width;
 	margin: $margin;
 } 
 
-@mixin float-overflow($float, $overflow) {
-	float: $float;
-	overflow: $overflow;
-} 
 
-@mixin hover-color($color, $hoverColor) {
-	& {
-		color: $color;
-	}
+@mixin hover-color($hoverColor) {
 	
 	&:hover {
 		color: $hoverColor;
 	}
 }  
-  
-  
-  
+
+ @mixin fontAwesome($content, $fontSize) {
+	font-family: FontAwesome;
+	content: $content;
+	font-size: $fontSize;
+ }
   
   
   
@@ -64,30 +60,85 @@ table {
 body {
 	padding:0;
 	margin:0;
-	font-family: Arial ;
+	font-family: Arial;
 }
 
 
+.navigation-wrapper {
+	background-color: #2c3e50;
+}
 
 .navigation {
-	@include width-margin(1000px, 0 auto);
+	@include maxWidth(1000px, 0 auto);
 	overflow: hidden;
 	
 	.nav-left {
-		@include float-overflow	(left, hidden);
+		float: left;
+		background-color: white;
+		
+		a {
+			padding: 0 10px;
+			display: block;
+		}
 	}
 	.nav-right {
-		@include float-overflow	(right, hidden);		
+		float: right;
+		margin-top: 30px;	
+
 	}
 }
 
 .nav-right  a {
-			
+	padding: 10px;
+	font-size: 18px;	
+	text-decoration: none;
+	color: white;	
+	
+	@include hover-color(aqua);
+}
+
+.slider-wrapper {
+		background-color: #EEEEEE;
+		padding: 20px 10px;
+}
+.header-slider {
+	@include maxWidth(1200px, 0 auto);
+	padding-left: 14px;
+	img {
+		width: 380px;
+		height: 270px;
+		border-radius: 10px;
+	}
+}
+.slick-current {
+	margin-top: 20px;
+}
+
+/*Start of Settings for arrows in slick slider*/
+
+.slick-next {
+	right: -70px;
+}
+
+.slick-prev {
+	left: -70px;
 }
 
 
+.slick-prev , .slick-next {
+	width: 70px;
+	height: 150px;
+	z-index: 1;
+}
 
+.slick-next:before { 
+	@include fontAwesome("\f105", 60px);
+}
+.slick-prev:before {
+	@include fontAwesome("\f104", 60px);
+}
 
+/*End of Settings for arrow in slick slider*/
 
 
 
