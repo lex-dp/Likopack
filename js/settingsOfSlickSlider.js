@@ -40,12 +40,14 @@ $(document).ready(function() {
 	});
 	
 	//Arrows
-	/*$(".slider-wrapper").find("button").hide();
-	$(".slick-slider").hover(function(){
-		$(this).find("button").stop().show(400);
-	},function(){
-		$(this).find("button").stop().hide(400);	
-	});*/
+	var sliderWrapper = $(".slider-wrapper");
+	
+	$(sliderWrapper).find("button").hide();
+		$(sliderWrapper).hover(function(){
+			$(sliderWrapper).find("button").show(400);
+		},function(){
+			$(sliderWrapper).find("button").hide(400);	
+	});
 	//End of slick	
 });  
 

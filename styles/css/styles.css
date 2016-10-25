@@ -60,9 +60,44 @@ body {
   .nav-right a:hover {
     color: aqua; }
 
+.slide-bg {
+  background: url(../../images/slide.jpg) no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+  min-height: 700px;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  font-size: 25px;
+  position: relative;
+  margin-top: 5px;
+  overflow: hidden; }
+  .slide-bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: gold; }
+  .slide-bg a {
+    text-decoration: none;
+    background-color: aqua;
+    padding: 10px 20px;
+    position: absolute;
+    top: 57%;
+    left: 48%;
+    background-color: green;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    border-radius: 25px;
+    width: 220px; }
+    .slide-bg a:hover {
+      text-shadow: 0px 1px 10px black; }
+
 .slider-wrapper {
   background-color: #EEEEEE;
   padding: 20px 10px; }
+  .slider-wrapper h2 {
+    text-align: center;
+    color: green;
+    font-size: 25px; }
 
 .header-slider {
   max-width: 1200px;
@@ -91,13 +126,102 @@ body {
 .slick-next:before {
   font-family: FontAwesome;
   content: "";
-  font-size: 60px; }
+  font-size: 60px;
+  color: black; }
 
 .slick-prev:before {
   font-family: FontAwesome;
   content: "";
-  font-size: 60px; }
+  font-size: 60px;
+  color: black; }
 
 /*End of Settings for arrow in slick slider*/
+/*Start of Content settings*/
+.content-wrapper {
+  background-color: #EEEEEE;
+  padding: 25px 10px;
+  overflow: hidden; }
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .content .content-left {
+    float: left;
+    width: 580px; }
+  .content .content-right {
+    float: right;
+    width: 580px; }
+    .content .content-right p {
+      margin-top: 10px; }
+  .content h1 {
+    font-size: 20px;
+    text-align: center; }
+  .content p {
+    font-size: 18px; }
+
+.content-left .content-list {
+  border-top: 1px solid grey;
+  padding: 10px 0px 5px;
+  margin-top: 10px;
+  min-height: 70px; }
+  .content-left .content-list:hover .road {
+    color: black; }
+  .content-left .content-list:hover .flag {
+    color: darkgreen; }
+  .content-left .content-list:hover .heart {
+    color: orangered; }
+  .content-left .content-list:hover .rocket {
+    color: red; }
+  .content-left .content-list:hover .smile {
+    color: orange; }
+.content-left .fa {
+  float: left;
+  padding-right: 20px;
+  color: #666; }
+.content-left .road:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+.content-left .flag:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+.content-left .heart:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+.content-left .rocket:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+.content-left .smile:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+
+/*End of Content settings*/
+/*Start of footer settings*/
+.footer-wrapper {
+  background-color: darkslategray; }
+  .footer-wrapper .footer {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+.footer-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px; }
+  .footer-list ul {
+    list-style: none; }
+  .footer-list a {
+    display: block;
+    text-decoration: none; }
+
+.map:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 55px; }
+
+/*End of footer settings*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -97,9 +97,58 @@ body {
 	@include hover-color(aqua);
 }
 
+.slide-bg {
+	background: url(../../images/slide.jpg) no-repeat center top;
+	background-size: cover;
+	background-position:center center;
+	min-height:700px;
+	
+	color: white;
+	text-shadow: 0px 1px 5px black;
+	font-size: 25px;
+	position: relative;
+	margin-top: 5px;
+	overflow: hidden;
+	
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		color: gold;
+	}
+	a {
+		text-decoration: none;
+		background-color: aqua;
+		padding: 10px 20px;
+		position: absolute;
+		top: 57%;
+		left: 48%;
+		background-color: green;
+		color: white;
+		text-shadow: 0px 1px 1px black;
+		border-radius: 25px;
+		width: 220px;
+		
+		&:hover {
+			text-shadow: 0px 1px 10px black;
+		}
+	}
+}
+
+
+
+
+
+
 .slider-wrapper {
 		background-color: #EEEEEE;
 		padding: 20px 10px;
+		
+		h2 {
+			text-align: center;
+			color: green;
+			font-size: 25px;
+		}
 }
 .header-slider {
 	@include maxWidth(1200px, 0 auto);
@@ -133,16 +182,130 @@ body {
 
 .slick-next:before { 
 	@include fontAwesome("\f105", 60px);
+	color: black;
 }
 .slick-prev:before {
 	@include fontAwesome("\f104", 60px);
+	color: black;
 }
 
 /*End of Settings for arrow in slick slider*/
 
 
 
+/*Start of Content settings*/
 
+.content-wrapper {
+	background-color: #EEEEEE;
+	padding: 25px 10px; 
+	overflow: hidden;
+}
+
+.content {
+	@include maxWidth(1200px, 0 auto);
+	
+	.content-left {
+		float: left;
+		width: 580px;
+	}
+	.content-right {
+		float: right;
+		width: 580px;
+		
+		p {
+			margin-top: 10px;
+		}
+	}
+	
+	h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	p {
+		font-size: 18px;			
+	}
+}
+
+
+.content-left {
+	.content-list {
+		border-top: 1px solid grey;
+		padding: 10px 0px 5px;
+		margin-top: 10px;
+		min-height: 70px;
+		
+		&:hover {
+			.road {color: black;}
+			.flag {color: darkgreen;}
+			.heart {color: orangered;}
+			.rocket {color: red;}
+			.smile {color: orange;}
+			
+		}
+	}
+	
+	.fa {
+		float: left;
+		padding-right: 20px;
+		color: #666;
+	}
+	
+	.road:before {
+		@include fontAwesome("\f018", 55px);
+	} 
+	.flag:before {
+		@include fontAwesome("\f024", 55px);
+	} 
+	.heart:before  {
+		@include fontAwesome("\f004", 55px);
+	}	
+	.rocket:before  {
+		@include fontAwesome("\f135", 55px);
+	}	
+	.smile:before  {
+		@include fontAwesome("\f118", 55px);
+	}
+}
+
+/*End of Content settings*/
+
+
+
+/*Start of footer settings*/
+
+.footer-wrapper {
+	background-color: darkslategray;
+	
+	.footer {
+		@include maxWidth(1200px, 0 auto);
+	}
+}
+
+.footer-list {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	
+	ul {
+		list-style: none;
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+	}
+	
+
+	
+}	
+
+.map:before {
+	@include fontAwesome("\f041", 55px);
+}
+
+
+/*End of footer settings*/
 
 
 
