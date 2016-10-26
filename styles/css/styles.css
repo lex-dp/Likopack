@@ -100,13 +100,14 @@ body {
     font-size: 25px; }
 
 .header-slider {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding-left: 14px; }
+  padding-left: 25px; }
   .header-slider img {
-    width: 380px;
-    height: 270px;
-    border-radius: 10px; }
+    width: 345px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 0 1px; }
 
 .slick-current {
   margin-top: 20px; }
@@ -272,7 +273,7 @@ body {
 .products-wrapper {
   margin-top: 5px; }
   .products-wrapper .products-content {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
     overflow: hidden; }
   .products-wrapper .product {
@@ -284,7 +285,7 @@ body {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 35px;
+    margin-right: 20px;
     margin-top: 20px; }
   .products-wrapper img {
     width: 355px;
@@ -324,7 +325,7 @@ body {
   /*End of products page*/ }
 @media screen and (max-width: 1200px) {
   .header-slider {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto; }
 
   .slick-current {
@@ -356,10 +357,13 @@ body {
 
   .footer-list {
     margin-right: 20px; } }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
   .header-slider {
-    max-width: 400px;
+    max-width: 370px;
     margin: 0 auto; }
+
+  .slide-bg {
+    min-height: 430px; }
 
   /*Start of products page*/
   .products-wrapper .products-content {
@@ -403,6 +407,15 @@ body {
 
   /*End of products page*/ }
 @media screen and (max-width: 600px) {
+  .slick-prev, .slick-next {
+    width: 30px; }
+
+  .slick-next {
+    right: -35px; }
+
+  .slick-prev {
+    left: -35px; }
+
   .content .content-left {
     width: 100%; }
   .content .content-right {
@@ -430,25 +443,31 @@ body {
     .footer-wrapper .phone ul {
       padding-left: 0; } }
 @media screen and (max-width: 500px) {
+  .slide-bg {
+    min-height: 380px; }
+
   .header-slider {
     max-width: 300px;
     margin: 0 auto; }
     .header-slider img {
-      width: 280px;
+      width: 275px;
       height: 200px; } }
 @media screen and (max-width: 400px) {
+  .slide-bg {
+    min-height: 300px; }
+
   .header-slider {
     max-width: 250px;
     margin: 0 auto; }
     .header-slider img {
-      width: 230px;
+      width: 225px;
       height: 180px; } }
 @media screen and (max-width: 330px) {
   .header-slider {
     max-width: 200px;
     margin: 0 auto; }
     .header-slider img {
-      width: 180px;
+      width: 175px;
       height: 160px; } }
 /*End of media queries*/
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
 	  speed: 300,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
-	  autoplay: true,
+	  autoplay: false,
 	  centerMode: true,
 	  centerPadding: '0px',
 	  swipeToSlide: true,
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	  autoplaySpeed: 2500,
 	  responsive: [
 		{
-		  breakpoint: 1200,
+		  breakpoint: 1130,
 		  settings: {
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		  }
 		},
 		{
-		  breakpoint: 820,
+		  breakpoint: 850,
 		  settings: {
 			slidesToShow: 1,
 			slidesToScroll: 1

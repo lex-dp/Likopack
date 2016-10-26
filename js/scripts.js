@@ -14,6 +14,7 @@ $(document).ready(function() {
 		var positionOfText;
 		var positionOfLink;	
 		linkShow.css("top", "57%");
+		textShow.css("top", "50%");
 		
 		var $width = $(window).width();
 		
@@ -46,8 +47,9 @@ $(document).ready(function() {
 			positionOfText = "8%";
 			positionOfLink = "24%";
 		}
-		if($width <= 370) {
+		if($width <= 380) {
 			positionOfText = "8%";
+			textShow.css("top", "35%");
 			positionOfLink = "18%";
 		}
 		
