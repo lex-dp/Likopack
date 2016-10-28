@@ -421,6 +421,164 @@ body {
 /*End of products page*/
 
 
+/*Start of productsNames pages*/
+
+	.product-slider-wrapper {
+		float: left;
+		overflow: hidden;
+		margin: 0 20px 20px 0;
+	}
+
+	.product-name {
+		@include maxWidth(1120px, 0 auto);
+		
+			h2 {
+				margin: 10px 0;
+				text-align: center;
+				font-size: 20px;
+				color: blue;
+			}
+		
+		.name {
+			text-align: center;
+			margin: 15px 0;
+			font-size: 20px;
+			color: green;
+		}		
+		
+		p {
+			margin: 15px 0;
+		}
+		
+		.services {
+			div {
+				display: inline-block;
+				vertical-align: top;
+				width: 215px;
+				text-align: center;
+				font-size: 15px;
+				position: relative;
+			}
+			
+			img {
+				width: 185px;
+				height: 150px;
+
+			}
+			
+			.moreInfo {
+				position: absolute;
+				left: 200px;
+				top: 0;
+				z-index: 1;
+				background-color: wheat;
+				color: green;
+				width: 150px;
+				border-radius: 10px;
+				
+				&:before {
+					content: '';
+					position: absolute;
+					left: -15px;
+					bottom: 79px;
+					width: 0;
+					height: 0;
+					border-top: 15px solid transparent;
+					border-right: 15px solid wheat;
+					border-bottom: 15px solid transparent;
+				}
+				
+				ul {
+					padding-left: 0;
+				}
+				
+				li {
+					list-style: none;
+					padding: 2px 0;
+				}
+			}
+		}
+	}
+
+	.methodsOfPayments {
+		text-align: center;
+		
+		p {
+			font-size: 18px;
+		}
+		
+		.cash p:before {
+			@include fontAwesome( "\f0d6", 20px);	
+			padding-right: 10px;
+		}
+		.creditCard p:before {
+			@include fontAwesome( "\f09d", 20px);
+			padding-right: 10px;
+		}
+		
+		.cash p:hover {&:before{color: green;}}
+		.creditCard p:hover {&:before{color: orange;}}
+		
+	}
+	
+/*End of productsNames pages*/
+
+
+/*Start of company page*/
+
+	.aboutUs {
+		@include maxWidth(1120px, 0 auto);
+		.info {
+			margin: 20px 0;
+		}
+		
+		h3 {
+			text-align: center;
+		}
+		
+		p {
+			margin: 20px 0;
+		}
+		
+		.img-right {
+			float:right;
+			margin: 5px 0 5px 15px;
+		}
+		
+		.img-left {
+			float:left;
+			margin: 5px 15px 5px 0px;
+		}
+		
+		img {
+			width:380px;
+			height: 250px;
+		}
+	}
+
+@media screen and (max-width: 420px) {
+	.aboutUs  {
+		img {
+			width: 285px;
+			height: 170px;
+		}
+	}
+}
+
+/*End of company page*/
+
+/*Start of contact page*/
+
+	.contact {
+		@include maxWidth(1120px, 0 auto);
+		
+		p {
+			margin: 20px 0;
+		}
+	}
+	
+
+/*End of contact page*/
 
 /*Start of media queries*/
 

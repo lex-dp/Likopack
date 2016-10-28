@@ -107,6 +107,25 @@ $(learnMore).hide();
 /*End of products page*/
 
 
+/*Start of productsNamesPages*/	
+
+var services = $(".services").find("div");
+var moreInfo = $(".moreInfo");
+
+$(moreInfo).hide();
+
+	$(services).hover(function(){
+		$(this).find(moreInfo).stop().show(700);
+	},
+	function(){
+		$(moreInfo).stop().stop().hide(700);
+	});
+	
+
+
+/*End of productsNamesPages*/
+
+
 	
 $( window ).resize(function() {
 	var $width = $(window).width();
