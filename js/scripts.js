@@ -126,10 +126,10 @@ $(moreInfo).hide();
 /*End of productsNamesPages*/
 
 
-	
+/*
 $( window ).resize(function() {
 	var $width = $(window).width();
 	console.log($width);
 });
-	
+	*/
 });

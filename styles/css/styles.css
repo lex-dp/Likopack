@@ -421,6 +421,54 @@ body {
     margin: 20px 0; }
 
 /*End of contact page*/
+/*Start of map page*/
+.regions {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: green; }
+
+#ua {
+  min-width: 0; }
+
+.towns {
+  max-width: 1130px;
+  margin: 0 auto; }
+  .towns li {
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: default; }
+    .towns li:hover {
+      background-color: red;
+      color: white;
+      border-radius: 30px; }
+
+.howToGet {
+  max-width: 1130px;
+  margin: 0 auto; }
+  .howToGet h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: green; }
+
+.methodsHowToGet {
+  border-top: 1px solid red;
+  margin-top: 25px; }
+  .methodsHowToGet img {
+    float: left;
+    width: 400px;
+    height: 270px;
+    margin: 10px 20px 10px 0; }
+  .methodsHowToGet h5 {
+    text-align: center;
+    margin: 5px 0;
+    color: blue; }
+  .methodsHowToGet p {
+    margin: 10px 0; }
+
+/*End of map page*/
 /*Start of media queries*/
 @media screen and (max-width: 1250px) {
   .footer-list {
@@ -459,10 +507,19 @@ body {
   .footer-wrapper .footer {
     max-width: 650px;
     margin: 0 auto; }
+  .footer-wrapper .footer-nav {
+    width: 600px; }
+    .footer-wrapper .footer-nav li {
+      display: inline-block;
+      padding-right: 25px; }
+  .footer-wrapper .map {
+    margin: 20px 0px 0px 85px; }
+  .footer-wrapper .skype {
+    margin: 35px 0px 0px 70px; }
   .footer-wrapper .mail {
-    margin: 30px 35px 0 120px; }
+    margin: 20px 0px 0px 85px; }
   .footer-wrapper .phone {
-    margin-top: 30px; }
+    margin: 20px 0px 0px 85px; }
 
   .footer-list {
     margin-right: 20px; } }
@@ -498,14 +555,32 @@ body {
       text-align: center; } }
 @media screen and (max-width: 670px) {
   .footer-wrapper .footer {
-    max-width: 520px;
-    margin: 0 auto; }
+    max-width: 250px;
+    margin: 0 auto;
+    padding-left: 20px; }
+  .footer-wrapper .footer-list {
+    margin-right: 0; }
+  .footer-wrapper .footer-nav {
+    width: 200px; }
+    .footer-wrapper .footer-nav li {
+      display: block;
+      padding-right: 0px; }
+  .footer-wrapper ul {
+    padding-left: 0; }
+  .footer-wrapper .map {
+    margin: 10px 0; }
+    .footer-wrapper .map:before {
+      left: -30px; }
   .footer-wrapper .skype {
-    margin: 30px 40px 0 115px; }
+    margin: 10px 0; }
+    .footer-wrapper .skype:before {
+      left: -35px; }
   .footer-wrapper .mail {
-    margin: 30px 0 0 0; }
+    margin: 10px 0; }
   .footer-wrapper .phone {
-    margin: 30px 0 0 135px; } }
+    margin: 10px 0; }
+    .footer-wrapper .phone:before {
+      left: -35px; } }
 @media screen and (max-width: 620px) {
   /*Start of products page*/
   .products-wrapper .products-content {
@@ -529,28 +604,6 @@ body {
     width: 100%; }
   .content .content-right {
     width: 100%; } }
-@media screen and (max-width: 530px) {
-  .footer-wrapper .footer {
-    max-width: 290px;
-    margin: 0 auto; }
-  .footer-wrapper .map {
-    margin: 30px 0 0 30px; }
-    .footer-wrapper .map:before {
-      left: -35px; }
-  .footer-wrapper .skype {
-    margin: 30px 0 0 30px; }
-    .footer-wrapper .skype:before {
-      left: -35px; }
-  .footer-wrapper .mail {
-    margin: 30px 0 0 30px; }
-    .footer-wrapper .mail:before {
-      left: -35px; }
-  .footer-wrapper .phone {
-    margin: 30px 0 0 30px; }
-    .footer-wrapper .phone:before {
-      left: -35px; }
-    .footer-wrapper .phone ul {
-      padding-left: 0; } }
 @media screen and (max-width: 500px) {
   .slide-bg {
     min-height: 380px; }

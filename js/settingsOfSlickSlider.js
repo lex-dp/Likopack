@@ -4,7 +4,7 @@ $(document).ready(function() {
 	  speed: 300,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
-	  autoplay: false,
+	  autoplay: true,
 	  centerMode: true,
 	  centerPadding: '0px',
 	  swipeToSlide: true,
